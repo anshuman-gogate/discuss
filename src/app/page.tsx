@@ -4,6 +4,8 @@ import TopicList from '@/components/topics/topic-list';
 import PostList from '@/components/posts/post-list';
 import { fetchTopPosts } from '@/db/queries/posts';
 
+export const revalidate = 3600;
+
 export default function Home() {
   return (
     <div className='grid grid-cols-4 gap-4 p-4'>
